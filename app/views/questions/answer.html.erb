@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <p>Question</p>
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <%= @my_question %>
+        <p> </p>
+        <footer class="blockquote-footer"> -you <cite title="Source Title">in form</cite></footer>
+      </blockquote>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <p>Answer</p>
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <%= @answer %>
+        <p> </p>
+        <footer class="blockquote-footer"> -your coach <cite title="Source Title"></cite></footer>
+      </blockquote>
+    </div>
+  </div>
+
+</div>
+
+<%= link_to "Ask new question", ask_path %>
